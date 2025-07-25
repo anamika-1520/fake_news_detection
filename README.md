@@ -38,7 +38,8 @@ Using a dataset with news labeled as FAKE or REAL. Example:
 * **text**: full article
 * **label**: FAKE (1) or REAL (0)
 
-Dataset source (optional): [Kaggle - Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+Dataset source (optional): [Kaggle - Fake News Dataset](<img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/83593e49-5f9e-4cd3-82c0-e2b00ddafe7b" />
+)
 
 ---
 
