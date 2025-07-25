@@ -25,10 +25,8 @@ fake_news_detection/
 ├── vectorizer.pkl             # Saved TfidfVectorizer
 ├── utils.py                   # Preprocessing functions
 ├── news.csv                   # Dataset with labeled news
-├── requirements.txt           # Python dependencies
 └── README.md                  # Project description
 ```
-
 ---
 
 ## 📊 Dataset
