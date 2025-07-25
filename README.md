@@ -21,11 +21,10 @@ This project detects whether a given news article is **fake or real** using **Na
 ```
 fake_news_detection/
 ├── streamlit_app.py           # Streamlit web app
-├── fake_news_model.pkl        # Trained Naive Bayes model
-├── tfidf_vectorizer.pkl       # Saved TfidfVectorizer
+├── model.pkl                  # Trained Naive Bayes model
+├── vectorizer.pkl             # Saved TfidfVectorizer
 ├── utils.py                   # Preprocessing functions
-├── data/
-│   └── news.csv               # Dataset with labeled news
+├── news.csv                   # Dataset with labeled news
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project description
 ```
@@ -118,28 +117,6 @@ pandas
 scikit-learn
 nltk
 joblib
-```
-
----
-
-## 📚 utils.py
-
-```python
-import re
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-
-nltk.download('stopwords')
-stop_words = set(stopwords.words('english'))
-stemmer = PorterStemmer()
-
-def preprocess_text(text):
-    text = text.lower()
-    text = re.sub(r'[^a-zA-Z]', ' ', text)
-    words = text.split()
-    words = [stemmer.stem(w) for w in words if w not in stop_words]
-    return ' '.join(words)
 ```
 
 ---
