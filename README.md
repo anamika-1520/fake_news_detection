@@ -68,7 +68,7 @@ Dataset source (optional): [Kaggle - Fake News Dataset](<img width="1917" height
 
 > Paste news content and check if it's FAKE or REAL in real-time.
 
-[Demo Screenshot](<C:\Users\wwwan\OneDrive\Pictures\Screenshots\Screenshot 2025-07-25 191125.png >)
+![Demo Screenshot](<C:\Users\wwwan\OneDrive\Pictures\Screenshots\Screenshot 2025-07-25 191125.png >)
 
 ---
 
