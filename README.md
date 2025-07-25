@@ -1,4 +1,4 @@
-# 📰 Fake News Detection Using Multinomial Naive Bayes and Streamlit
+<img width="1917" height="976" alt="Screenshot 2025-07-25 191125" src="https://github.com/user-attachments/assets/b090412a-2fa1-48ab-abfe-e6451dc73948" /># 📰 Fake News Detection Using Multinomial Naive Bayes and Streamlit
 
 ## 🚀 Project Overview
 
@@ -68,7 +68,7 @@ Dataset source (optional): [Kaggle - Fake News Dataset](<img width="1917" height
 
 > Paste news content and check if it's FAKE or REAL in real-time.
 
-![Demo Screenshot](https://user-images.githubusercontent.com/your_image_link.png)
+![Demo Screenshot]("C:\Users\wwwan\OneDrive\Pictures\Screenshots\Screenshot 2025-07-25 191125.png")
 
 ---
 
