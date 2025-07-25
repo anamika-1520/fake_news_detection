@@ -1,1 +1,156 @@
-# fake_news_detection
+# 📰 Fake News Detection Using Multinomial Naive Bayes and Streamlit
+
+## 🚀 Project Overview
+
+This project detects whether a given news article is **fake or real** using **Natural Language Processing (NLP)** and the **Multinomial Naive Bayes algorithm**. A user-friendly **Streamlit app** is provided for real-time predictions.
+
+---
+
+## 📌 Key Features
+
+* ✅ Clean and reproducible ML pipeline
+* ✅ Text vectorization with TF-IDF
+* ✅ Multinomial Naive Bayes classifier
+* ✅ Streamlit app for live predictions
+* ✅ Lightweight and fast model
+
+---
+
+## 📂 Project Structure
+
+```
+fake_news_detection/
+├── streamlit_app.py           # Streamlit web app
+├── fake_news_model.pkl        # Trained Naive Bayes model
+├── tfidf_vectorizer.pkl       # Saved TfidfVectorizer
+├── utils.py                   # Preprocessing functions
+├── data/
+│   └── news.csv               # Dataset with labeled news
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project description
+```
+
+---
+
+## 📊 Dataset
+
+Using a dataset with news labeled as FAKE or REAL. Example:
+
+* **text**: full article
+* **label**: FAKE (1) or REAL (0)
+
+Dataset source (optional): [Kaggle - Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+
+---
+
+## 🔍 Model Details
+
+* **Classifier**: Multinomial Naive Bayes (from `sklearn.naive_bayes`)
+* **Text Vectorizer**: `TfidfVectorizer`
+* **Pipeline**:
+
+  * Clean and tokenize text
+  * Transform to TF-IDF features
+  * Predict using Naive Bayes model
+
+---
+
+## 📐 How It Works
+
+1. Load and preprocess text
+2. Vectorize with TF-IDF
+3. Predict using saved model
+4. Show result in Streamlit app
+
+---
+
+## 🖼️ Streamlit App Demo
+
+> Paste news content and check if it's FAKE or REAL in real-time.
+
+![Demo Screenshot](https://user-images.githubusercontent.com/your_image_link.png)
+
+---
+
+## 💪 Run Locally
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/fake_news_detection.git
+cd fake_news_detection
+```
+
+### 2. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the App
+
+```bash
+streamlit run streamlit_app.py
+```
+
+---
+
+## 🧪 Sample Inputs
+
+* ✅ "NASA launches new satellite to explore outer space." ➔ REAL
+* ❌ "PM arrested in scam worth 300 crores, no proof yet." ➔ FAKE
+
+---
+
+## 🤔 Future Enhancements
+
+* Integrate deep learning (LSTM, BERT)
+* Show top keywords using SHAP or LIME
+* Deploy to Streamlit Cloud or Hugging Face Spaces
+
+---
+
+## 📃 requirements.txt
+
+```
+streamlit
+pandas
+scikit-learn
+nltk
+joblib
+```
+
+---
+
+## 📚 utils.py
+
+```python
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+
+nltk.download('stopwords')
+stop_words = set(stopwords.words('english'))
+stemmer = PorterStemmer()
+
+def preprocess_text(text):
+    text = text.lower()
+    text = re.sub(r'[^a-zA-Z]', ' ', text)
+    words = text.split()
+    words = [stemmer.stem(w) for w in words if w not in stop_words]
+    return ' '.join(words)
+```
+
+---
+
+## 🌟 Author
+
+**Anamika**
+GitHub: [@anamika-1520](https://github.com/anamika-1520)
+
+---
+
+## 📄 License
+
+MIT License - free to use and modify.
