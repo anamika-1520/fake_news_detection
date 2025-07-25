@@ -1,4 +1,4 @@
-<img width="1917" height="976" alt="Screenshot 2025-07-25 191125" src="https://github.com/user-attachments/assets/b090412a-2fa1-48ab-abfe-e6451dc73948" /># 📰 Fake News Detection Using Multinomial Naive Bayes and Streamlit
+# 📰 Fake News Detection Using Multinomial Naive Bayes and Streamlit
 
 ## 🚀 Project Overview
 
